@@ -1,0 +1,4 @@
+---
+# install_dig/defaults/main.yml
+
+dig_package: 'bind-utils'
