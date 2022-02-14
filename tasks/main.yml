@@ -1,0 +1,13 @@
+---
+# install_dig/tasks/main.yml
+
+- name: 'Set different package name on Debian/Ubuntu and their derivatives'
+  set_fact:
+    dig_package: 'dnsutils'
+  when:
+    - 'ansible_os_family == "Debian"'
+
+- name: 'Install the dig package'
+  package:
+    name: "{{ dig_package }}"
+    state: 'present'
