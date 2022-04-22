@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: 'install_dig'
+  namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: 'Install the dig utility'
   company: 'B1 Systems GmbH'
